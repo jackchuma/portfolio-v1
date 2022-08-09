@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavigationDots, SocialMedia } from '../components';
 
-const AppWrap = (Component, idName, classNames) => function HOC() {
+const AppWrap = (Component, idName) => function HOC() {
   return (
     <div className='app__container-outter'>
         <SocialMedia />

@@ -17,7 +17,7 @@ const Internals = () => {
           <Footer />
         </div>
       </div>
-      <NavigationDots active={'home'} />
+      <NavigationDots />
     </div>
   )
 }

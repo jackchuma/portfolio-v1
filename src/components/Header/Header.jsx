@@ -1,13 +1,9 @@
 import React from 'react';
 
 import { ComponentWrap } from '../../wrapper';
-import { useStateContext } from '../../context/StateContext';
+import './Header.scss';
 
-const Header = ({ isVisible }) => {
-  const { setActive } = useStateContext();
-
-  if (isVisible) setActive('home');
-
+const Header = () => {
   return (
     <div>Header</div>
   )
