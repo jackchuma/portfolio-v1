@@ -1,6 +1,9 @@
 import React from 'react';
 
-const NavigationDots = ({ active }) => {
+import { useStateContext } from '../../context/StateContext';
+
+const NavigationDots = () => {
+  const { active } = useStateContext();
   return (
     <div className='app__navigation'>
       {['home', 'about', 'work', 'skills', 'testimonial', 'contact'].map((item, i) => (

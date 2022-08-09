@@ -1,15 +1,20 @@
 import React from 'react';
 
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { ComponentWrap, MotionWrap } from '../../wrapper';
+import { useStateContext } from '../../context/StateContext';
 
-const Testimonial = () => {
+const Testimonial = ({ isVisible }) => {
+  const { setActive } = useStateContext();
+
+  if (isVisible) setActive('testimonial');
+
   return (
     <div>Testimonial</div>
   )
 }
 
-export default AppWrap(
+export default ComponentWrap(
   MotionWrap(Testimonial, 'app__testimonial'),
-  'testimonials',
+  'testimonial',
   'app__primarybg'
 );

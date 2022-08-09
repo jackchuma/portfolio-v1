@@ -1,14 +1,19 @@
 import React from 'react';
 
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { ComponentWrap, MotionWrap } from '../../wrapper';
+import { useStateContext } from '../../context/StateContext';
 
-const Skills = () => {
+const Skills = ({ isVisible }) => {
+  const { setActive } = useStateContext();
+
+  if (isVisible) setActive('skills');
+
   return (
     <div>Skills</div>
   )
 }
 
-export default AppWrap(
+export default ComponentWrap(
   MotionWrap(Skills, 'app__skills'),
   'skills',
   'app__whitebg'

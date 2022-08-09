@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { ComponentWrap, MotionWrap } from '../../wrapper';
 
 const About = () => {
   return (
@@ -8,7 +8,7 @@ const About = () => {
   )
 }
 
-export default AppWrap(
+export default ComponentWrap(
   MotionWrap(About, 'app__about'),
   'about',
   'app__whitebg'

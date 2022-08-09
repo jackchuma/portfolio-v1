@@ -1,14 +1,19 @@
 import React from 'react';
 
-import { AppWrap, MotionWrap } from '../../wrapper';
+import { ComponentWrap, MotionWrap } from '../../wrapper';
+import { useStateContext } from '../../context/StateContext';
 
-const Footer = () => {
+const Footer = ({ isVisible }) => {
+  const { setActive } = useStateContext();
+
+  if (isVisible) setActive('contact');
+
   return (
     <div>Footer</div>
   )
 }
 
-export default AppWrap(
+export default ComponentWrap(
   MotionWrap(Footer, 'app__footer'),
   'contact',
   'app__whitebg'
