@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 .app {
     background-color: var(--primary-color);
-    color: var(--white-color);
+    color: var(--lightGray-color);
+    font-family: 'Roboto', sans-serif;
 }
 
 .app__whitebg {
@@ -60,11 +63,12 @@
 }
 
 .head-text {
-    font-size: 2.75rem;
+    font-size: 4rem;
     font-weight: 800;
     text-align: center;
-    color: var(--black-color);
-    text-transform: capitalize;
+    color: var(--lightGray-color);
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
 
     span {
         color: var(--secondary-color);
@@ -186,7 +190,7 @@
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 850px) {
     .app__navigation, .app__social {
         display: none;
     }

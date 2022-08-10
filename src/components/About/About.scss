@@ -1,0 +1,112 @@
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.app__about-description {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.05rem;
+
+        @media screen and (max-width: 750px) {
+            font-size: 1rem;
+            line-height: 1.25rem;
+        }
+    }
+
+    @media screen and (max-width: 1300px) {
+        flex-direction: column;
+    }
+}
+
+.app__skills {
+    width: 80%;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    .app__about-description, .app__skills {
+        width: 95%;
+    }
+}
+
+.app__skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.app__skills-item {
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+
+    div {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: var(--lightGray-color);
+        transition: all 0.3s ease-in-out;
+
+        img {
+            width: 50%;
+            height: 50%;
+        }
+
+        @media screen and (min-width: 2000px) {
+            width: 150px;
+            height: 150px;
+        }
+
+        @media screen and (max-width: 900px) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    p {
+        font-weight: 500;
+        margin-top: 0.5rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+
+        div {
+            box-shadow: 0 0 15px #fef4f5;
+        }
+    }
+
+    @media screen and (min-width: 2000px) {
+        margin: 1rem 2rem;
+
+        p {
+            margin-top: 1rem;
+        }
+    }
+}
