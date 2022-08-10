@@ -15,6 +15,5 @@ const Footer = ({ isVisible }) => {
 
 export default ComponentWrap(
   MotionWrap(Footer, 'app__footer'),
-  'contact',
-  'app__whitebg'
+  'contact'
 );

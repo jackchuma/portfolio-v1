@@ -5,7 +5,12 @@ import './Header.scss';
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <>
+      <div className='app__header-background'></div>
+      <div className='app__header-image'></div>
+      <h1 className='app__header'>Jack Chuma</h1>
+      <h2 className='app__sub-header'>Software Engineer & Solidity Developer</h2>
+    </>
   )
 }
 

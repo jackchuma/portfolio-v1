@@ -15,6 +15,5 @@ const Skills = ({ isVisible }) => {
 
 export default ComponentWrap(
   MotionWrap(Skills, 'app__skills'),
-  'skills',
-  'app__whitebg'
+  'skills'
 );
