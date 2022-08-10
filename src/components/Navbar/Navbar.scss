@@ -10,10 +10,15 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
     z-index: 2;
+
+    @media screen and (max-width: 900px) {
+        justify-content: flex-end;
+    }
 }
 
 .app__navbar-logo {
     position: fixed;
+    left: 0.75rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -96,7 +101,9 @@
         top: 0;
         bottom: 0;
         right: 0;
-        z-index: 5;
+        transform: translateX(101%);
+        transition: all 0.85s ease-in-out;
+        z-index: 2;
         padding: 1rem;
         width: 80%;
         height: 100vh;
