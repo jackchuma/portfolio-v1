@@ -1,6 +1,6 @@
 export default {
-    name: 'works',
-    title: 'Works',
+    name: 'projects',
+    title: 'Projects',
     type: 'document',
     fields: [
       {
@@ -8,7 +8,6 @@ export default {
         title: 'Title',
         type: 'string',
       },
-    
       {
         name: 'description',
         title: 'Description',
@@ -32,19 +31,17 @@ export default {
           hotspot: true,
         },
       },
-   
       {
         name: 'tags',
         title: 'Tags',
-       type:'array',
-       of: [
-         {
-           name:'tag',
-           title:'Tag',
-           type:'string'
-         }
-       ]
+        type:'array',
+        of: [
+          {
+            name:'tag',
+            title:'Tag',
+            type:'string'
+          }
+        ]
       },
-     
     ],
   };

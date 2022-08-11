@@ -6,7 +6,7 @@ import NavigationDots from './NavigationDots/NavigationDots';
 import Skills from './Skills/Skills';
 import SocialMedia from './SocialMedia/SocialMedia';
 import Testimonial from './Testimonial/Testimonial';
-import Work from './Work/Work';
+import Projects from './Projects/Projects';
 
 export {
     About,
@@ -17,5 +17,5 @@ export {
     Skills,
     SocialMedia,
     Testimonial,
-    Work
+    Projects
 };

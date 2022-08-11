@@ -6,7 +6,7 @@ const NavigationDots = () => {
   const { active } = useStateContext();
   return (
     <div className='app__navigation'>
-      {['home', 'about', 'work', 'skills', 'testimonial', 'contact'].map((item, i) => (
+      {['home', 'about', 'projects', 'skills', 'testimonial', 'contact'].map((item, i) => (
         <a
           href={`#${item}`}
           key={item + i}
