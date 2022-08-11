@@ -175,7 +175,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: #cbcbcb;
+        background-color: var(--gray-color);
         margin: 0.5rem;
         transition: background-color 0.2s ease-in-out;
 
@@ -198,4 +198,8 @@
     .copyright {
         padding: 2rem;
     }
+}
+
+.hidden {
+    display: none;
 }

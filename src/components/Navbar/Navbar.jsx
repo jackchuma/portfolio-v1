@@ -3,7 +3,7 @@ import { HiMenuAlt4, HiX } from 'react-icons/hi';
 
 import './Navbar.scss';
 
-const sections = ['home', 'about', 'projects', 'skills', 'contact'];
+const sections = ['home', 'about', 'projects', 'experience', 'contact'];
 
 const Navbar = () => {
 

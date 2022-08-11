@@ -3,7 +3,7 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Navbar from './Navbar/Navbar';
 import NavigationDots from './NavigationDots/NavigationDots';
-import Skills from './Skills/Skills';
+import Experience from './Experience/Experience';
 import SocialMedia from './SocialMedia/SocialMedia';
 import Testimonial from './Testimonial/Testimonial';
 import Projects from './Projects/Projects';
@@ -14,7 +14,7 @@ export {
     Header,
     Navbar,
     NavigationDots,
-    Skills,
+    Experience,
     SocialMedia,
     Testimonial,
     Projects

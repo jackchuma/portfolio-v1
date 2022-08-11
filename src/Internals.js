@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { About, Footer, Header, Navbar, NavigationDots, Skills, SocialMedia, Testimonial, Projects } from './components';
+import { About, Footer, Header, Navbar, NavigationDots, Experience, SocialMedia, Projects } from './components';
 
 const Internals = () => {
   return (
@@ -12,8 +12,7 @@ const Internals = () => {
           <Header />
           <About />
           <Projects />
-          <Skills />
-          <Testimonial />
+          <Experience />
           <Footer />
         </div>
       </div>

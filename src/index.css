@@ -5,7 +5,9 @@
     --font-base: "DM Sans", sans-serif;
 
     --primary-color: #03040A;
-    --secondary-color: #6ec1e4;
+    /* --secondary-color: #6ec1e4; */
+    --secondary-color: rgba(110, 193, 228, 1);
+    --secondary-color-dimmed: rgba(110, 193, 228, 0.6);
     --black-color: #030303;
     --lightGray-color: #e4e4e4;
     --gray-color: #6b7688;
