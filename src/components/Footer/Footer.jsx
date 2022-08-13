@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MdEmail } from 'react-icons/md';
 
 import { ComponentWrap, MotionWrap } from '../../wrapper';
 import { client } from '../../client';
@@ -36,7 +37,7 @@ const Footer = () => {
       <h2 className='head-text'>Get In Touch</h2>
       <div className='app__footer-cards'>
         <div className='app__footer-card'>
-          <img src={images.email} alt='email' />
+          <MdEmail />
           <a href='mailto:jackchuma21@gmail.com' className='p-text'>jackchuma21@gmail.com</a>
         </div>
         <div className='app__footer-card'>
@@ -65,7 +66,7 @@ const Footer = () => {
         </div>
         :
         <div>
-          <h3 className='head-text'>Thank you for getting in touch</h3>
+          <h3 className='head-text'>Thank you for getting in touch!</h3>
         </div>
       }
     </>

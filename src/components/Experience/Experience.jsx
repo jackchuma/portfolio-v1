@@ -14,8 +14,9 @@ const Experience = () => {
   useEffect(() => {
     const query = '*[_type == "experience"]';
     client.fetch(query).then(data => {
-      setExperiences(data);
-      setActiveExperience(data[0]);
+      const sortedData = data.sort((a, b) => b.num - a.num);
+      setExperiences(sortedData);
+      setActiveExperience(sortedData[0]);
     });
   }, []);
 

@@ -23,7 +23,7 @@
 
         &:hover {
             background-color: var(--secondary-color);
-            color: var(--white-color);
+            // color: var(--white-color);
         }
 
         @media screen and (min-width: 2000px) {
@@ -34,7 +34,7 @@
 
     .item-active {
         background-color: var(--secondary-color);
-        color: var(--white-color);
+        // color: var(--white-color);
     }
 }
 
@@ -51,7 +51,7 @@
         margin: 2rem;
         border-radius: 0.5rem;
         background-color: var(--white-color);
-        color: var(--lightGray-color);
+        color: var(--white-color);
         cursor: pointer;
         transition: all 0.3s ease;
         overflow: hidden;
@@ -145,7 +145,7 @@
     flex-direction: column;
     overflow-y: hidden;
     transition: transform 300ms;
-    background-color: #54595f;
+    background-color: var(--surface-color);
     transform: translateY(calc(100% - 3rem));
 
     h4 {
